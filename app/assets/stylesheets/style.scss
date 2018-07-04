@@ -1,0 +1,216 @@
+div.container:not(#nav-container){
+  margin-top: 60px;
+}
+
+.navbar-default .navbar-nav > li.non-hover > a:hover{
+  color: black;
+}
+
+.navbar-default{
+  background-color: #f5f5f5;
+}
+
+.navbar-default .navbar-brand{
+  font-family: 'Shrikhand', cursive;
+  font-size: 40px;
+  color: #ff4e50;
+}
+
+.navbar-nav > li.with_icon > a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-icon{
+  height: 30px;
+  width: 30px;
+}
+
+.glyphicon.glyphicon-log-out{
+  font-size: 20px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th{
+  vertical-align: middle;
+  font-family: 'Comfortaa', cursive;
+}
+
+.footer{
+  background-color: #e7e7e7;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar-default .navbar-nav > li > a.nav-text{
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  vertical-align: middle;
+}
+
+h1, h2, h3, label, p.description{
+  font-family: 'Comfortaa', cursive;
+}
+
+h1.inline{
+  display: inline-block;
+}
+
+.restaurant-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.restaurant-item img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.restaurant-item h3{
+  overflow: hidden;
+}
+
+.restaurant-item .caption {
+  padding: 10px;
+}
+
+.card:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.card{
+  color: black;
+}
+
+.restaurant-item:hover{
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-pills {
+    text-align:center;
+}
+
+.nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+  background-color: #c50027;
+}
+
+.nav > li > a:hover{
+  background-color: #ff4e50;
+  color: white;
+}
+
+.nav > li{
+  display: inline-block;
+}
+
+.sort-name{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.float-right{
+  float: right;
+}
+
+.avatar{
+  max-height: 300px;
+}
+
+.fake-avatar{
+  width: 300px;
+}
+
+.my-restaurant{
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 5px 5px;
+}
+
+.my-restaurant > div {
+  height: 60px;
+}
+
+.my-restaurant img {
+  max-height: 100%;
+}
+
+.my-restaurant:hover{
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2)
+}
+
+.user-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.user-item:hover{
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
+.followings > img{
+  max-width: 60px;
+}
+
+.panel-toggle{
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.notification{
+  border: 1px solid;
+  border-radius: 25%;
+  padding: 0 2px 0 2px;
+  display: inline-block;
+  background-color: red;
+  color: white;
+}
+
+/*custom navbar collapse setup*/
+@media (max-width: 992px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}

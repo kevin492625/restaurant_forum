@@ -1,0 +1,23 @@
+<div class="row">
+  <!-- restaurant information -->
+  <div class="col-md-12">
+    <h1 class="text-center"><%= @restaurant.name %></h1>
+    <p class="text-center">[<%= @restaurant.category.name %>]</p>
+  </div>
+
+  <div class="col-md-8 col-md-offset-2">
+    <%= show_restaurant_img(@restaurant.image) %>
+    <br>
+    <div class="well">
+      <ul class="list-unstyled">
+        <li><b>Opening Hour:</b> <%= @restaurant.opening_hours %></li>
+        <li><b>Tel:</b> <%= @restaurant.tel %></li>
+        <li><b>Address:</b> <%= @restaurant.address %></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-8 col-md-offset-2">
+    <%= simple_format @restaurant.description %> 
+    <hr>
+  </div> 
+</div>
