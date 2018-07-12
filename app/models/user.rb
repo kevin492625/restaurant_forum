@@ -6,9 +6,15 @@ class User < ApplicationRecord
   mount_uploader :avatar, AvatarUploader       
   validates_presence_of :name
   
-
+  # 「使用者評論很多餐廳」的多對多關聯
   has_many :comments
   has_many :restaurants, through: :comments
+
+  # 「使用者收藏很多餐廳」的多對多關聯
+  has_many :favorites, dependent: :destroy
+  has_many :favorited_restaurants, through: :favorites, source: :restaurant
+
+  has_many :favorited_users, through: :favorites, source: :user
 
   # admin? 讓我們用來判斷單個user是否有 admin 角色，列如：current_user.admin?
   def admin?
