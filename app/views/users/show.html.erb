@@ -8,7 +8,7 @@
 
         <div class="col-md-3 col-sm-4">
           <div class="text-center">
-            <img src="http://via.placeholder.com/350x350" class="img-responsive img-rounded">
+            <%= image_tag @user.avatar.url, class: "img-responsive img-rounded" %>
           </div>
         </div>
 
@@ -20,11 +20,22 @@
             <%= link_to 'Edit Profile', edit_user_path(@user), class: "btn btn-primary" %>
           <% end %>
         </div>
+        
         <div class="clearfix"></div>
 
       </div>
 
       <br>
+
+      <div>
+        <!-- 顯示已評論餐廳的清單 -->
+        <div>
+          <% @commented_restaurants.each do |restaurant| %>
+            <h5><%= restaurant.name %></h5>
+          <% end %>
+        </div>
+      </div>
+
 
 
 

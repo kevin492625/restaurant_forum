@@ -1,8 +1,9 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
 
-  def show
-  end
+   def show
+    @commented_restaurants = @user.restaurants.uniq
+   end
 
   def edit
     unless @user == current_user
