@@ -5,4 +5,10 @@ class Restaurant < ApplicationRecord
   belongs_to :category
 
   has_many :comments
+  
+  def is_favorited?(user)
+    self.favorited_users.include?(user)
+  end
+
+
 end
